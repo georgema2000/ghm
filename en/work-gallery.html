@@ -1,0 +1,434 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Work Gallery - GHM</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/ghm.css" type="text/css"/>
+    <link rel="stylesheet" href="css/jquery.fancybox-1.3.1.css" type="text/css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <script type="Text/Javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox-1.3.1.js"></script>
+<script type="text/javascript">
+		$(document).ready(function() {
+			
+
+			$("a#example1").fancybox({
+				'titleShow'		: false
+			});
+
+			$("a#example2").fancybox({
+				'titleShow'		: false,
+				'transitionIn'	: 'elastic',
+				'transitionOut'	: 'elastic'
+			});
+
+			$("a#example3").fancybox({
+				'titleShow'		: false,
+				'transitionIn'	: 'none',
+				'transitionOut'	: 'none'
+			});
+
+			$("a#example4").fancybox();
+
+			$("a#example5").fancybox({
+				'titlePosition'	: 'inside'
+			});
+
+			$("a#example6").fancybox({
+				'titlePosition'	: 'over'
+			});
+
+			$("a[rel=example_group]").fancybox({
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+					return '<span id="fancybox-title-over">' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+				}
+			});
+
+			/*
+			*   Examples - various
+			*/
+
+			$("#various1").fancybox({
+				'titlePosition'		: 'inside',
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+
+			$("#various2").fancybox();
+
+			$("#various3").fancybox({
+				'width'				: '75%',
+				'height'			: '75%',
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'type'				: 'iframe'
+			});
+
+			$("#various4").fancybox({
+				'padding'			: 0,
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+		});
+	</script>
+    <script type="Text/Javascript" src="js/jquery.url.js"></script>
+    <script type="text/javascript">
+		jQuery(document).ready(function(){
+			var $page = jQuery.url.attr("file");
+			jQuery('#menu li a').each(function(){
+				var $href = $(this).attr('href');
+				if ( ($href == $page) || ($href == '') ) {
+					jQuery(this).addClass('active');
+				} else {
+					jQuery(this).removeClass('active');
+				}
+			});
+		});
+	</script>
+    <script>
+		jQuery(document).ready(function()
+		{
+		jQuery('h2').each(function() {
+			 var h = jQuery(this).html();
+			 var index = h.indexOf(' ');
+			 if(index == -1) {
+				 index = h.length;
+			 }
+			 jQuery(this).html('<span class="h1firstword">' + h.substring(0, index) + '</span>' + h.substring(index, h.length));
+		 });
+		
+		});
+	</script>
+</head>
+<body>
+    <div id="header" class="header">
+        <div class="container">
+            <div class="logo">
+                <p class="logotxt"><a href="home.html"><img src="images/logo2.png" alt="GHM"/></a><span style="line-height:22px"><br></span>&nbsp;&nbsp;<span style=" letter-spacing:1.9px">G<span style="color:#001142; padding:0">OOD</span>&nbsp; H<span style="color:#001142; padding:0">ANDS</span></span> <br> 
+                &nbsp;&nbsp;<span>M<span style="color:#001142; padding:0">ANUFACTURING</span></span></p>
+            </div>
+            <div id='menu'>
+                <ul>
+                   <li class="first-nav-item"><a class="active" href="home.html">Home</a></li>
+                   <li><a href="about-us.html">About Us</a></li>
+                   <li><a href="work-gallery.html">Products</a></li>
+                   <li><a href="equipments.html">Equipments</a></li>
+                   <li class="last-nav-item"><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="header-btn"><a class="req-btn" href="mailto:sales@ghm-tooling.com">Request for Quote</a></div>
+<!--
+            <div class="languages">
+            	<div class="us-language"><a href="#"><img src="images/us.jpg" alt="US"/></a></div>
+                <div class="cn-language"><a href="#"><img src="images/cn.jpg" alt="CHINA"/></a></div>
+            </div>
+-->
+        </div><!-- CONTAINER END -->
+    </div><!-- HEADER END -->
+    <div class="container">
+        <div class="wrap-inner">
+            <div class="inner-content">
+            <h1>Products</h1>
+            <h2>Tooling</h2>
+              <h3>Progressive Die</h3>
+                 <div class="work_pic">
+                  <a rel="example_group" href="images/pic_58b.jpg" title=""><img src="images/pic_58.jpg"></a>
+                  <p>high strength materials</p>
+                </div>
+                <div class="work_pic">
+                  <a rel="example_group" href="images/pic_36b.jpg" title=""><img src="images/pic_36.jpg"></a>
+            <p>&nbsp; </p> </div>
+                <div class="work_pic">
+                  <a rel="example_group" href="images/pic_119b.jpg" title=""><img src="images/pic_119.jpg"></a>
+          <p>&nbsp; </p> </div>
+                  <div class="work_pic">
+                  <a rel="example_group" href="images/pic_121b.jpg" title=""><img src="images/pic_121.jpg"></a>
+                  <p>&nbsp; </p> </div>
+                  <div class="work_pic">
+                  <a rel="example_group" href="images/pic_122b.jpg" title=""><img src="images/pic_122.jpg"></a>
+                  <p>&nbsp;</p> </div>
+                  <div class="work_pic">
+                  <a rel="example_group" href="images/pic_123b.jpg" title=""><img src="images/pic_123.jpg"></a>
+                  <p>&nbsp;</p> </div>
+                  <div class="work_pic">
+                  <a rel="example_group" href="images/pic_124b.jpg" title=""><img src="images/pic_124.jpg"></a>
+                  <p>&nbsp;</p> </div>
+                  <div class="work_pic">
+                  <a rel="example_group" href="images/pic_125b.jpg" title=""><img src="images/pic_125.jpg"></a>
+                  <p>&nbsp;</p> </div>
+                  <div class="work_pic">
+                  <a rel="example_group" href="images/pic_126b.jpg" title=""><img src="images/pic_126.jpg"></a>
+                  <p>&nbsp;</p> </div>
+                  <div class="work_pic">
+                  <a rel="example_group" href="images/pic_127b.jpg" title=""><img src="images/pic_127.jpg"></a>
+                  <p>&nbsp;</p> </div>
+                  <div class="work_pic">
+                  <a rel="example_group" href="images/pic_128b.jpg" title=""><img src="images/pic_128.jpg"></a>
+                  <p>&nbsp;</p> </div>
+                  <div class="work_pic">
+                 <a rel="example_group" href="images/pic_77b.jpg" title=""> <img src="images/pic_77.jpg"></a>
+            <p>&nbsp; </p> </div>
+            <div class="work_pic">
+                  <a rel="example_group" href="images/pic_34b.jpg" title=""><img src="images/pic_34.jpg"></a>
+           <p>&nbsp; </p> </div>
+           <div class="work_pic">
+                 <a rel="example_group" href="images/pic_90b.jpg" title=""> <img src="images/pic_90.jpg"></a>
+                  <p>&nbsp; </p> </div>
+              <h3>Casting die</h3>
+              <div class="work_pic">
+                <a rel="example_group" href="images/pic_120b.jpg" title=""><img src="images/pic_120.jpg"></a>
+               <p>&nbsp;</p> </div>
+                 <div class="work_pic">
+                   <a rel="example_group" href="images/pic_37b.jpg" title=""><img src="images/pic_37.jpg"></a>
+                  <p>&nbsp;</p> </div>
+                 <div class="work_pic">
+                   <a rel="example_group" href="images/pic_38b.jpg" title=""><img src="images/pic_38.jpg"></a>
+                  <p>&nbsp;</p> </div>
+                 <div class="work_pic">
+                   <a rel="example_group" href="images/pic_39b.jpg" title=""><img src="images/pic_39.jpg"></a>
+                  <p>&nbsp;</p> </div>
+                 <div class="work_pic">
+                   <a rel="example_group" href="images/pic_40b.jpg" title=""><img src="images/pic_40.jpg"></a>
+                  <p>&nbsp;</p> </div>
+                 <div class="work_pic">
+                   <a rel="example_group" href="images/pic_41b.jpg" title=""><img src="images/pic_41.jpg"></a>
+                  <p>&nbsp;</p> </div>
+                <div class="work_pic">
+                   <a rel="example_group" href="images/pic_43b.jpg" title=""><img src="images/pic_43.jpg"></a>
+                  <p>&nbsp;</p> </div>
+                 <div class="work_pic">
+                  <a rel="example_group" href="images/pic_44b.jpg" title=""><img src="images/pic_44.jpg"></a>
+                  <p>&nbsp;</p> </div>
+                 <div class="work_pic">
+                  <a rel="example_group" href="images/pic_45b.jpg" title=""><img src="images/pic_45.jpg"></a>
+                  <p>&nbsp;</p> </div>
+                  <div class="work_pic">
+                  <a rel="example_group" href="images/pic_47b.jpg" title=""><img src="images/pic_47.jpg"></a>
+                  <p>&nbsp; </p> </div>
+              <h3>Single Station Die</h3>
+              <div class="work_pic">
+                <a rel="example_group" href="images/pic_48b.jpg" title=""><img src="images/pic_48.jpg"></a>
+            <p>&nbsp;</p> </div>
+                <div class="work_pic">
+                  <a rel="example_group" href="images/pic_49b.jpg" title=""><img src="images/pic_49.jpg"></a>
+                  <p>&nbsp; </p> </div>
+                  <div class="work_pic">
+                  <a rel="example_group" href="images/pic_130b.jpg" title=""><img src="images/pic_130.jpg"></a>
+                  <p>&nbsp; </p> </div>
+                  <div class="work_pic">
+                  <a rel="example_group" href="images/pic_131b.jpg" title=""><img src="images/pic_131.jpg"></a>
+                  <p>&nbsp; </p> </div>
+                  <div class="work_pic">
+                  <a rel="example_group" href="images/pic_132b.jpg" title=""><img src="images/pic_132.jpg"></a>
+                  <p>&nbsp; </p> </div>
+                  <div class="work_pic">
+                  <a rel="example_group" href="images/pic_133b.jpg" title=""><img src="images/pic_133.jpg"></a>
+                  <p>&nbsp; </p> </div>
+                  <div class="work_pic">
+                  <a rel="example_group" href="images/pic_134b.jpg" title=""><img src="images/pic_134.jpg"></a>
+                  <p>&nbsp; </p> </div>
+                  <div class="work_pic">
+                  <a rel="example_group" href="images/pic_135b.jpg" title=""><img src="images/pic_135.jpg"></a>
+                  <p>&nbsp; </p> </div>
+            <h2>Parts</h2>
+              <h3>Passenger Car Seat Parts</h3>
+                 <div class="work_pic">
+                  <a rel="example_group" href="images/pic_50b.jpg" title=""><img src="images/pic_50.jpg"></a>
+                  <p>Passenger Car Seat Parts </p> </div>
+                 <div class="work_pic">
+                  <a rel="example_group" href="images/pic_51b.jpg" title=""><img src="images/pic_51.jpg"></a>
+                 <p>Passenger Car Seat Parts  </p> </div>
+                <div class="work_pic">
+                  <a rel="example_group" href="images/pic_52b.jpg" title=""><img src="images/pic_52.jpg"></a>
+                 <p>Passenger Car Seat Parts  </p> </div>
+                <div class="work_pic">
+                  <a rel="example_group" href="images/pic_55b.jpg" title=""><img src="images/pic_55.jpg"></a>
+           <p>Passenger Car Seat Parts  </p> </div>
+                 <div class="work_pic">
+                  <a rel="example_group" href="images/pic_56b.jpg" title=""><img src="images/pic_56.jpg"></a>
+                  <p>Stainless steel exterior parts  </p> </div>
+                 <div class="work_pic">
+                  <a rel="example_group" href="images/pic_57b.jpg" title=""><img src="images/pic_57.jpg"></a>
+                  <p>Stainless steel exterior parts </p> </div>
+                <div class="work_pic">
+                 <a rel="example_group" href="images/pic_61b.jpg" title=""> <img src="images/pic_61.jpg"></a>
+                  <p>high strength materials </p> </div>
+                <div class="work_pic">
+                 <a rel="example_group" href="images/pic_63b.jpg" title=""> <img src="images/pic_63.jpg"></a>
+            <p>high strength materials </p> </div>
+                <div class="work_pic">
+                  <a rel="example_group" href="images/pic_64b.jpg" title=""><img src="images/pic_64.jpg"></a>
+                  <p>high strength materials</p> </div>
+                
+            <div class="work_pic">
+                  <a rel="example_group" href="images/pic_66b.jpg" title=""><img src="images/pic_66.jpg"></a>
+                 <p>Material thickness:5mm</p>&nbsp; </div>
+                <div class="work_pic">
+                  <a rel="example_group" href="images/pic_67b.jpg" title=""><img src="images/pic_67.jpg"></a>
+                 <p>Material:SUS304 t=3mm<br>Part size:1150*550mm</p> </div>
+                <div class="work_pic">
+                  <a rel="example_group" href="images/pic_68b.jpg" title=""><img src="images/pic_68.jpg"></a>
+                 <p>drawing <br>&nbsp; </p> </div>
+                <div class="work_pic">
+                  <a rel="example_group" href="images/pic_70b.jpg" title=""><img src="images/pic_70.jpg"></a>
+                  <p>drawing </p> </div>
+                <div class="work_pic">
+                  <a rel="example_group" href="images/pic_72b.jpg" title=""><img src="images/pic_72.jpg"></a>
+            <p>drawing</p> </div>
+                <div class="work_pic">
+                  <a rel="example_group" href="images/pic_73b.jpg" title=""><img src="images/pic_73.jpg"></a>
+                  <p>Curling</p> </div>
+                
+            <div class="work_pic">
+                  <a rel="example_group" href="images/pic_78b.jpg" title=""><img src="images/pic_78.jpg"></a>
+                  <p>&nbsp;  </p> </div>
+                <div class="work_pic">
+                 <a rel="example_group" href="images/pic_79b.jpg" title=""> <img src="images/pic_79.jpg"></a>
+                  <p>&nbsp; </p> </div>
+                <div class="work_pic">
+                  <a rel="example_group" href="images/pic_80b.jpg" title=""><img src="images/pic_80.jpg"></a>
+                  <p>&nbsp;  </p> </div>
+                <div class="work_pic">
+                  <a rel="example_group" href="images/pic_81b.jpg" title=""><img src="images/pic_81.jpg"></a>
+                  <p>&nbsp; </p> </div>
+                <div class="work_pic">
+                 <a rel="example_group" href="images/pic_82b.jpg" title=""> <img src="images/pic_82.jpg"></a>
+                  <p>&nbsp; </p> </div>
+                <div class="work_pic">
+                  <a rel="example_group" href="images/pic_85b.jpg" title=""><img src="images/pic_85.jpg"></a>
+            <p>&nbsp; </p> </div>
+                <div class="work_pic">
+                  <a rel="example_group" href="images/pic_86b.jpg" title=""><img src="images/pic_86.jpg"></a>
+                  <p>&nbsp; </p> </div>
+                <div class="work_pic">
+                  <a rel="example_group" href="images/pic_87b.jpg" title=""><img src="images/pic_87.jpg"></a>
+                  <p>&nbsp; </p> </div>
+                <div class="work_pic">
+                  <a rel="example_group" href="images/pic_88b.jpg" title=""><img src="images/pic_88.jpg"></a>
+                  <p>&nbsp;  </p> </div>
+                <div class="work_pic">
+                 <a rel="example_group" href="images/pic_89b.jpg" title=""> <img src="images/pic_89.jpg"></a>
+                  <p>&nbsp;  </p> </div>
+                
+                 
+             <div class="work_pic">
+                 <a rel="example_group" href="images/pic_83b.jpg" title=""> <img src="images/pic_83.jpg"></a>
+            <p>&nbsp; </p> </div>
+                
+           <h3>other parts</h3>
+                 <div class="work_pic">
+                 <a rel="example_group" href="images/pic_91b.jpg" title=""> <img src="images/pic_91.jpg"></a>
+                  <p>&nbsp; </p> </div>
+                 <div class="work_pic">
+                  <a rel="example_group" href="images/pic_92b.jpg" title=""><img src="images/pic_92.jpg"></a>
+                  <p>&nbsp; </p> </div>
+                 <div class="work_pic">
+                 <a rel="example_group" href="images/pic_94b.jpg" title=""> <img src="images/pic_94.jpg"></a>
+           <p>&nbsp; </p> </div>
+                 <div class="work_pic">
+                  <a rel="example_group" href="images/pic_95b.jpg" title=""><img src="images/pic_95.jpg"></a>
+                  <p>&nbsp; </p> </div>
+                 <div class="work_pic">
+                  <a rel="example_group" href="images/pic_96b.jpg" title=""><img src="images/pic_96.jpg"></a>
+                  <p>&nbsp; </p> </div>
+            <h2>Gauge</h2>
+                 <div class="work_pic">
+                  <a rel="example_group" href="images/pic_111b.jpg" title=""><img src="images/pic_111.jpg"></a>
+                  <p>&nbsp; </p> </div>
+                 <div class="work_pic">
+                  <a rel="example_group" href="images/pic_112b.jpg" title=""><img src="images/pic_112.jpg"></a>
+                  <p>&nbsp; </p> </div>
+                 <div class="work_pic">
+                  <a rel="example_group" href="images/pic_113b.jpg" title=""><img src="images/pic_113.jpg"></a>
+                  <p>&nbsp; </p> </div>
+                 <div class="work_pic">
+                 <a rel="example_group" href="images/pic_114b.jpg" title=""> <img src="images/pic_114.jpg"></a>
+                  <p>&nbsp; </p> </div>
+                 <div class="work_pic">
+                  <a rel="example_group" href="images/pic_115b.jpg" title=""><img src="images/pic_115.jpg"></a>
+                  <p>&nbsp; </p> </div>
+                 <div class="work_pic">
+                  <a rel="example_group" href="images/pic_116b.jpg" title=""><img src="images/pic_116.jpg"></a>
+                  <p>&nbsp; </p> </div>
+                <div class="work_pic">
+                  <a rel="example_group" href="images/pic_117b.jpg" title=""><img src="images/pic_117.jpg"></a>
+                  <p>&nbsp; </p> </div>
+                <div class="work_pic">
+                  <a rel="example_group" href="images/pic_118b.jpg" title=""><img src="images/pic_118.jpg"></a>
+                  <p>&nbsp; </p> </div>
+            </div><!-- INNER CONTENT END -->
+            <div class="sidebar">
+            	<div class="section4-container section4-container-first">
+                    <img src="images/section4-img1.jpg" alt="Simulation" />
+                    <h3>Simulation</h3>
+                    <div class="content">
+                        <p>We have 5 designers with 5 ~ 10 years of experience in CAE analysis.</p>
+                    </div>
+                </div>
+                <div class="section4-container">
+                    <img src="images/section4-img2.jpg" alt="Design" />
+                    <h3>Design</h3>
+                    <div class="content">
+                        <p>Our 30 member design team can be divided into 3 groups to handle 3 mid-size projects at the same time. Each group leader has more than 8 years of design experience.</p>
+                    </div>
+                </div>
+                <div class="section4-container">
+                    <img src="images/section4-img3.jpg" alt="1200T Press" />
+                    <h3>1 set 1200T Coil Feed Press</h3>
+                    <div class="content">
+                        <p>Bolster: 5500mm * 2000mm</br>
+                           Feeder width: 1200mm (Max)</p>
+                    </div>
+                </div>
+                <div class="section4-container section4-container-last">
+                    <img src="images/section4-img4.jpg" alt="Production Lines" />
+                    <h3>Production Lines</h3>
+                    <div class="content">
+                        <p>- 1 set 500T coil feed press (bolster: 3500mm*1500mm)</br>
+                           - 8 sets 200T press production line</br>
+                           - 7 sets 110T press production line</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- WRAP INNER PAGE SECTION END -->
+    </div><!-- CONTAINER END -->
+    <div class="footer">
+  		<div class="container">
+        	 <div class="footer-container footer-container1">
+             	<h3>Quick Links</h3>
+                <ul class="footer-nav">
+                   <li><a href="home.html">Home</a></li>
+                   <li><a href="about-us.html">About Us</a></li>
+                   <li><a href="work-gallery.html">Work Gallery</a></li>
+                   <li><a href="equipments.html">Equipments</a></li>
+                   <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+             </div>
+             <div class="footer-container footer-container2">
+             	<h3>Contact Information</h3>
+                <div class="clear"></div>
+                <ul class="contact-info">
+                	<li class="address">No. 66-1 Tangqing East Road, Hengtang, Tangxia Town, Dongguan, Guangdong, PR China 523713</li>
+                    <li class="phone">+86-769-89067502</li>
+                    <li class="fax">+86-769-89067500</li>
+<!--                    <li class="mobile">+86-159-16800650</li>-->
+                    <li class="email"><a href="mailto:info@ghm-tooling.com">info@ghm-tooling.com</a></li>
+                </ul>
+              <a href="contact-us.html" style="float:left"><img class="footer-map" src="images/small-map.jpg"/></a>
+             </div>
+             <div class="footer-container-last">
+             	<img src="images/footer-logo.png" alt="GHM"/>
+                <div class="header-btn"><a class="req-btn" href="mailto:sales@ghm-tooling.com">Request for Quote</a></div>
+             </div>
+        </div><!-- CONTAINER END -->
+    </div><!-- FOOTER END -->  
+    <div class="copyright">&copy; 2015 GHM. All Rights Reserved.</div>
+</body>
+</html>

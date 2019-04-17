@@ -1,0 +1,518 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Work Gallery - GHM</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/ghm.css" type="text/css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <script type="Text/Javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="Text/Javascript" src="js/jquery.url.js"></script>
+    <script type="text/javascript">
+		jQuery(document).ready(function(){
+			var $page = jQuery.url.attr("file");
+			jQuery('#menu li a').each(function(){
+				var $href = $(this).attr('href');
+				if ( ($href == $page) || ($href == '') ) {
+					jQuery(this).addClass('active');
+				} else {
+					jQuery(this).removeClass('active');
+				}
+			});
+		});
+	</script>
+    <script>
+		jQuery(document).ready(function()
+		{
+		jQuery('h2').each(function() {
+			 var h = jQuery(this).html();
+			 var index = h.indexOf(' ');
+			 if(index == -1) {
+				 index = h.length;
+			 }
+			 jQuery(this).html('<span class="h1firstword">' + h.substring(0, index) + '</span>' + h.substring(index, h.length));
+		 });
+		
+		});
+	</script>
+</head>
+<body>
+    <div id="header" class="header">
+        <div class="container">
+            <div class="logo">
+                <p class="logotxt"><a href="home.html"><img src="images/logo2.png" alt="GHM"/></a><span style="line-height:22px"><br></span>&nbsp;&nbsp;<span style=" letter-spacing:1.9px">G<span style="color:#001142; padding:0">OOD</span>&nbsp; H<span style="color:#001142; padding:0">ANDS</span></span> <br> 
+                &nbsp;&nbsp;<span>M<span style="color:#001142; padding:0">ANUFACTURING</span></span></p>
+            </div>
+            <div id='menu'>
+                <ul>
+                   <li class="first-nav-item"><a class="active" href="home.html">Home</a></li>
+                   <li><a href="about-us.html">About Us</a></li>
+                   <li><a href="work-gallery.html">Products</a></li>
+                   <li><a href="equipments.html">Equipments</a></li>
+                   <li class="last-nav-item"><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="header-btn"><a class="req-btn" href="mailto:sales@ghm-tooling.com">Request for Quote</a></div>
+<!--
+            <div class="languages">
+            	<div class="us-language"><a href="#"><img src="images/us.jpg" alt="US"/></a></div>
+                <div class="cn-language"><a href="#"><img src="images/cn.jpg" alt="CHINA"/></a></div>
+            </div>
+-->
+        </div><!-- CONTAINER END -->
+    </div><!-- HEADER END -->
+    <div class="container">
+        <div class="wrap-inner">
+            <div class="inner-content">
+                <h1>Products</h1>
+                <h2>Tooling</h2>
+                <h3>Progressive Die</h3>
+            <div class="work_pic">
+                  <img src="images/pic_31.jpg">
+                  <p>products display<br>
+                  size：</p>
+                </div>
+                 <div class="work_pic">
+                  <img src="images/pic_32.jpg">
+                  <p>products display<br>
+                  size：</p>
+                </div>
+                 <div class="work_pic">
+                  <img src="images/pic_33.jpg">
+                  <p>products display<br>
+                  size： </p>
+                </div>
+                <div class="work_pic">
+                  <img src="images/pic_34.jpg">
+                  <p>products display <br>
+                  size：</p>
+                </div>
+                <div class="work_pic">
+                  <img src="images/pic_35.jpg">
+                  <p>Passenger Car Seat Parts
+                  </p>
+                </div>
+                <div class="work_pic">
+                  <img src="images/pic_36.jpg">
+                  <p>products display <br>
+                  size：</p>
+                </div>
+                <h3>Casting die</h3>
+                 <div class="work_pic">
+                  <img src="images/pic_37.jpg">
+                  <p>products display <br>
+                  size：</p>
+                </div>
+                 <div class="work_pic">
+                  <img src="images/pic_38.jpg">
+                  <p>products display <br>
+                  size：</p>
+                </div>
+                 <div class="work_pic">
+                  <img src="images/pic_39.jpg">
+                  <p>products display <br>
+                  size：</p>
+                </div>
+                 <div class="work_pic">
+                  <img src="images/pic_40.jpg">
+                  <p>products display <br>
+                  size：</p>
+                </div>
+                 <div class="work_pic">
+                  <img src="images/pic_41.jpg">
+                  <p>products display <br>
+                  size：</p>
+                </div>
+                 <div class="work_pic">
+                  <img src="images/pic_42.jpg">
+                  <p>Thick Material Parts <br>
+                  size：</p>
+                </div>
+                <div class="work_pic">
+                  <img src="images/pic_43.jpg">
+                  <p>products display <br>
+                  size：</p>
+                </div>
+                 <div class="work_pic">
+                  <img src="images/pic_44.jpg">
+                  <p>products display <br>
+                  size：</p>
+                </div>
+                 <div class="work_pic">
+                  <img src="images/pic_45.jpg">
+                  <p>products display <br>
+                  size：</p>
+                </div>
+                <div class="work_pic">
+                  <img src="images/pic_46.jpg">
+                  <p>products display <br>
+                  size：</p>
+                </div>
+                 <div class="work_pic">
+                  <img src="images/pic_47.jpg">
+                  <p>products display <br>
+                  size：</p>
+                </div>
+                <h3>Single Station Die</h3>
+                 <div class="work_pic">
+                  <img src="images/pic_48.jpg">
+                  <p>products display <br>
+                  size：</p>
+                </div>
+                <div class="work_pic">
+                  <img src="images/pic_49.jpg">
+                  <p>products display <br>
+                  size：</p>
+                </div>
+                <h2>Parts</h2>
+                <h3>Passenger Car Seat Parts</h3>
+              
+                 <div class="work_pic">
+                  <img src="images/pic_50.jpg">
+                  <p>Passenger Car Seat Parts <br>
+                  size：</p>
+                </div>
+                 <div class="work_pic">
+                  <img src="images/pic_51.jpg">
+                 <p>Passenger Car Seat Parts <br>
+                  size：</p>
+                </div>
+                <div class="work_pic">
+                  <img src="images/pic_52.jpg">
+                 <p>Passenger Car Seat Parts <br>
+                  size：</p>
+                </div>
+                 <div class="work_pic">
+                  <img src="images/pic_53.jpg">
+                 <p>Passenger Car Seat Parts <br>
+                  size：</p>
+                </div>
+                 <div class="work_pic">
+                  <img src="images/pic_54.jpg">
+                 <p>Passenger Car Seat Parts <br>
+                  size：</p>
+                </div>
+                <div class="work_pic">
+                  <img src="images/pic_55.jpg">
+                  <p>Passenger Car Seat Parts <br>
+                  size：</p>
+                </div>
+                 <div class="work_pic">
+                  <img src="images/pic_56.jpg">
+                  <p>Stainless steel exterior parts <br>
+                  size：</p>
+                </div>
+                 <div class="work_pic">
+                  <img src="images/pic_57.jpg">
+                  <p>Stainless steel exterior parts <br>
+                  size：</p>
+                </div>
+                <div class="work_pic">
+                  <img src="images/pic_30.jpg">
+                  <p>high strength materials<br>
+                  size：</p>
+                </div>
+                 <div class="work_pic">
+                  <img src="images/pic_58.jpg">
+                  <p>high strength materials</p>
+                </div>
+                 <div class="work_pic">
+                  <img src="images/pic_59.jpg">
+                  <p>high strength materials</p>
+                </div>
+                <div class="work_pic">
+                  <img src="images/pic_60.jpg">
+                  <p>high strength materials</p>
+                </div>
+                <div class="work_pic">
+                  <img src="images/pic_61.jpg">
+                  <p>high strength materials<br>
+                  size：</p>
+                </div>
+                <div class="work_pic">
+                  <img src="images/pic_62.jpg">
+                  <p>high strength materials<br>
+                  size：</p>
+                </div>
+                <div class="work_pic">
+                  <img src="images/pic_63.jpg">
+                   <p>high strength materials<br>
+                  size：</p>
+                </div>
+                <div class="work_pic">
+                  <img src="images/pic_64.jpg">
+                  <p>high strength materials<br>
+                  size：</p>
+                </div>
+                <div class="work_pic">
+                  <img src="images/pic_65.jpg">
+                  <p>Thick material <br>
+                  size：3~6MM</p>
+                </div>
+                <div class="work_pic">
+                  <img src="images/pic_66.jpg">
+                 <p>Thick material <br>
+                  size：3~6MM</p>
+                </div>
+                <div class="work_pic">
+                  <img src="images/pic_67.jpg">
+                 <p>Thick material <br>
+                  size：3~6MM</p>
+                </div>
+                <div class="work_pic">
+                  <img src="images/pic_68.jpg">
+                 <p>drawing <br>
+                  size：</p>
+                </div>
+                <div class="work_pic">
+                  <img src="images/pic_69.jpg">
+                  <p>drawing <br>
+                  size：</p>
+                </div>
+                <div class="work_pic">
+                  <img src="images/pic_70.jpg">
+                  <p>drawing <br>
+                  size：</p>
+                </div>
+                <div class="work_pic">
+                  <img src="images/pic_71.jpg">
+                  <p>drawing <br>
+                  size：</p>
+                </div>
+                <div class="work_pic">
+                  <img src="images/pic_72.jpg">
+                  <p>drawing <br>
+                  size：</p>
+                </div>
+                <div class="work_pic">
+                  <img src="images/pic_73.jpg">
+                  <p>Curling<br>
+                  size：</p>
+                </div>
+                <div class="work_pic">
+                  <img src="images/pic_74.jpg">
+                  <p>Curling <br>
+                  size：</p>
+                </div>
+                <div class="work_pic">
+                  <img src="images/pic_75.jpg">
+                  <p>Curling <br>
+                  size：</p>
+                </div>
+                
+                <div class="work_pic">
+                  <img src="images/pic_76.jpg">
+                  <p>products display<br>
+                  size：</p>
+                </div>
+                <div class="work_pic">
+                  <img src="images/pic_77.jpg">
+                  <p>products display<br>
+                  size：</p>
+                </div>
+                <div class="work_pic">
+                  <img src="images/pic_78.jpg">
+                  <p>products display<br>
+                  size：</p>
+                </div>
+                <div class="work_pic">
+                  <img src="images/pic_79.jpg">
+                  <p>products display<br>
+                  size：</p>
+                </div>
+                <div class="work_pic">
+                  <img src="images/pic_80.jpg">
+                  <p>products display<br>
+                  size：</p>
+                </div>
+                <div class="work_pic">
+                  <img src="images/pic_81.jpg">
+                  <p>products display<br>
+                  size：</p>
+                </div>
+                <div class="work_pic">
+                  <img src="images/pic_82.jpg">
+                  <p>products display<br>
+                  size：</p>
+                </div>
+                <div class="work_pic">
+                  <img src="images/pic_83.jpg">
+                  <p>products display<br>
+                  size：</p>
+                </div>
+                <div class="work_pic">
+                  <img src="images/pic_84.jpg">
+                  <p>products display<br>
+                  size：</p>
+                </div>
+                <div class="work_pic">
+                  <img src="images/pic_85.jpg">
+                  <p>products display<br>
+                  size：</p>
+                </div>
+                <div class="work_pic">
+                  <img src="images/pic_86.jpg">
+                  <p>products display<br>
+                  size：</p>
+                </div>
+                <div class="work_pic">
+                  <img src="images/pic_87.jpg">
+                  <p>products display<br>
+                  size：</p>
+                </div>
+                <div class="work_pic">
+                  <img src="images/pic_88.jpg">
+                  <p>products display<br>
+                  size：</p>
+                </div>
+                <div class="work_pic">
+                  <img src="images/pic_89.jpg">
+                  <p>products display<br>
+                  size：</p>
+                </div>
+                <div class="work_pic">
+                  <img src="images/pic_90.jpg">
+                  <p>products display<br>
+                  size：</p>
+                </div>
+                 <h3>other parts</h3>
+                 <div class="work_pic">
+                  <img src="images/pic_91.jpg">
+                  <p>products display<br>
+                  size：</p>
+                </div>
+                 <div class="work_pic">
+                  <img src="images/pic_92.jpg">
+                  <p>products display<br>
+                  size：</p>
+                </div>
+                 <div class="work_pic">
+                  <img src="images/pic_93.jpg">
+                  <p>products display<br>
+                  size：</p>
+                </div>
+                 <div class="work_pic">
+                  <img src="images/pic_94.jpg">
+                  <p>products display<br>
+                  size：</p>
+                </div>
+                 <div class="work_pic">
+                  <img src="images/pic_95.jpg">
+                  <p>products display<br>
+                  size：</p>
+                </div>
+                 <div class="work_pic">
+                  <img src="images/pic_96.jpg">
+                  <p>products display<br>
+                  size：</p>
+                </div>
+                <h2>Gauge</h2>
+                 <div class="work_pic">
+                  <img src="images/pic_111.jpg">
+                  <p>products display<br>
+                  size：</p>
+                </div>
+                 <div class="work_pic">
+                  <img src="images/pic_112.jpg">
+                  <p>products display<br>
+                  size：</p>
+                </div>
+                 <div class="work_pic">
+                  <img src="images/pic_113.jpg">
+                  <p>products display<br>
+                  size：</p>
+                </div>
+                 <div class="work_pic">
+                  <img src="images/pic_114.jpg">
+                  <p>products display<br>
+                  size：</p>
+                </div>
+                 <div class="work_pic">
+                  <img src="images/pic_115.jpg">
+                  <p>products display<br>
+                  size：</p>
+                </div>
+                 <div class="work_pic">
+                  <img src="images/pic_116.jpg">
+                  <p>products display<br>
+                  size：</p>
+                </div>
+                <div class="work_pic">
+                  <img src="images/pic_117.jpg">
+                  <p>products display<br>
+                  size：</p>
+                </div>
+                <div class="work_pic">
+                  <img src="images/pic_118.jpg">
+                  <p>products display<br>
+                  size：</p>
+                </div>
+            </div><!-- INNER CONTENT END -->
+            <div class="sidebar">
+            	<div class="section4-container section4-container-first">
+                    <img src="images/section4-img1.jpg" alt="Simulation" />
+                    <h3>Simulation</h3>
+                    <div class="content">
+                        <p>We have 5 designers with 5 ~ 10 years of experience in CAE analysis.</p>
+                    </div>
+                </div>
+                <div class="section4-container">
+                    <img src="images/section4-img2.jpg" alt="Design" />
+                    <h3>Design</h3>
+                    <div class="content">
+                        <p>Our 30 member design team can be divided into 3 groups to handle 3 mid-size projects at the same time. Each group leader has more than 8 years of design experience.</p>
+                    </div>
+                </div>
+                <div class="section4-container">
+                    <img src="images/section4-img3.jpg" alt="1200T Press" />
+                    <h3>1 set 1200T Coil Feed Press</h3>
+                    <div class="content">
+                        <p>Bolster: 5500mm * 2000mm</br>
+                           Feeder width: 1200mm (Max)</p>
+                    </div>
+                </div>
+                <div class="section4-container section4-container-last">
+                    <img src="images/section4-img4.jpg" alt="Production Lines" />
+                    <h3>Production Lines</h3>
+                    <div class="content">
+                        <p>- 1 set 500T coil feed press (bolster: 3500mm*1500mm)</br>
+                           - 8 sets 200T press production line</br>
+                           - 7 sets 110T press production line</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- WRAP INNER PAGE SECTION END -->
+    </div><!-- CONTAINER END -->
+    <div class="footer">
+  		<div class="container">
+        	 <div class="footer-container footer-container1">
+             	<h3>Quick Links</h3>
+                <ul class="footer-nav">
+                   <li><a href="home.html">Home</a></li>
+                   <li><a href="about-us.html">About Us</a></li>
+                   <li><a href="work-gallery.html">Work Gallery</a></li>
+                   <li><a href="equipments.html">Equipments</a></li>
+                   <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+             </div>
+             <div class="footer-container footer-container2">
+             	<h3>Contact Information</h3>
+                <div class="clear"></div>
+                <ul class="contact-info">
+                	<li class="address">No. 66-1 Tangqing East Road, Hengtang, Tangxia Town, Dongguan, Guangdong, PR China.</li>
+                    <li class="phone">+86-769-89067502</li>
+                    <li class="fax">+86-769-89067500</li>
+                    <li class="mobile">+86-135-32631835</li>
+                    <li class="email"><a href="mailto:info@ghm-tooling.com">info@ghm-tooling.com</a></li>
+                </ul>
+              <a href="contact-us.html" style="float:left"><img class="footer-map" src="images/small-map.jpg"/></a>
+             </div>
+             <div class="footer-container-last">
+             	<img src="images/footer-logo.png" alt="GHM"/>
+                <div class="header-btn"><a class="req-btn" href="mailto:sales@ghm-tooling.com">Request for Quote</a></div>
+             </div>
+        </div><!-- CONTAINER END -->
+    </div><!-- FOOTER END -->  
+    <div class="copyright">&copy; 2015 GHM. All Rights Reserved.</div>
+</body>
+</html>

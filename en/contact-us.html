@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Contact Us - GHM</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/ghm.css" type="text/css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <script type="Text/Javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="Text/Javascript" src="js/jquery.url.js"></script>
+    <script type="text/javascript">
+		jQuery(document).ready(function(){
+			var $page = jQuery.url.attr("file");
+			jQuery('#menu li a').each(function(){
+				var $href = $(this).attr('href');
+				if ( ($href == $page) || ($href == '') ) {
+					jQuery(this).addClass('active');
+				} else {
+					jQuery(this).removeClass('active');
+				}
+			});
+		});
+	</script>
+    <script>
+		jQuery(document).ready(function()
+		{
+		jQuery('h2').each(function() {
+			 var h = jQuery(this).html();
+			 var index = h.indexOf(' ');
+			 if(index == -1) {
+				 index = h.length;
+			 }
+			 jQuery(this).html('<span class="h1firstword">' + h.substring(0, index) + '</span>' + h.substring(index, h.length));
+		 });
+		
+		});
+	</script>
+</head>
+<body>
+    <div id="header" class="header">
+        <div class="container">
+            <div class="logo">
+                <p class="logotxt"><a href="home.html"><img src="images/logo2.png" alt="GHM"/></a><span style="line-height:22px"><br></span>&nbsp;&nbsp;<span style=" letter-spacing:1.9px">G<span style="color:#001142; padding:0">OOD</span>&nbsp; H<span style="color:#001142; padding:0">ANDS</span></span> <br> 
+                &nbsp;&nbsp;<span>M<span style="color:#001142; padding:0">ANUFACTURING</span></span></p>
+            </div>
+            <div id='menu'>
+                <ul>
+                   <li class="first-nav-item"><a class="active" href="home.html">Home</a></li>
+                   <li><a href="about-us.html">About Us</a></li>
+                   <li><a href="work-gallery.html">Products</a></li>
+                   <li><a href="equipments.html">Equipments</a></li>
+                   <li class="last-nav-item"><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="header-btn"><a class="req-btn" href="mailto:sales@ghm-tooling.com">Request for Quote</a></div>
+<!--
+            <div class="languages">
+            	<div class="us-language"><a href="#"><img src="images/us.jpg" alt="US"/></a></div>
+                <div class="cn-language"><a href="#"><img src="images/cn.jpg" alt="CHINA"/></a></div>
+            </div>
+-->
+        </div><!-- CONTAINER END -->
+    </div><!-- HEADER END -->
+    <div class="container">
+        <div class="wrap-inner">
+            <h1>CONTACT US</h1>
+            <div class="content list-style">
+                <div class="contact-left">
+                	<p><strong>Address:</strong> No. 66-1 Tangqing East Road, Hengtang, Tangxia Town, Dongguan, Guangdong, PR China 523713</p>
+                    <p><strong>Phone:</strong> +86-769-87297651/2 Ext. 610</p>
+                    <p><strong>Fax:</strong> +86-769-87889160</p>
+                    <p><strong>Email: <a href="mailto:info@ghm-tooling.com">info@ghm-tooling.com</a></strong></p>
+                </div>
+                <div class="contact-right">
+               	    <img src="images/map.jpg" alt="map" />
+                </div>
+            </div>
+        </div><!-- WRAP INNER PAGE SECTION END -->
+    </div><!-- CONTAINER END -->
+    <div class="footer">
+  		<div class="container">
+        	 <div class="footer-container footer-container1">
+             	<h3>Quick Links</h3>
+                <ul class="footer-nav">
+                   <li><a href="home.html">Home</a></li>
+                   <li><a href="about-us.html">About Us</a></li>
+                   <li><a href="work-gallery.html">Work Gallery</a></li>
+                   <li><a href="equipments.html">Equipments</a></li>
+                   <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+             </div>
+             <div class="footer-container footer-container2">
+             	<h3>Contact Information</h3>
+                <div class="clear"></div>
+                <ul class="contact-info">
+                	<li class="address">No. 66-1 Tangqing East Road, Hengtang, Tangxia Town, Dongguan, Guangdong, PR China 523713</li>
+                    <li class="phone">+86-769-89067502</li>
+                    <li class="fax">+86-769-89067500</li>
+<!--                    <li class="mobile">+86-159-16800650</li>-->
+                    <li class="email"><a href="mailto:info@ghm-tooling.com">info@ghm-tooling.com</a></li>
+                </ul>
+               <a href="contact-us.html" style="float:left"><img class="footer-map" src="images/small-map.jpg"/></a>
+             </div>
+             <div class="footer-container-last">
+             	<img src="images/footer-logo.png" alt="GHM"/>
+                <div class="header-btn"><a class="req-btn" href="mailto:sales@ghm-tooling.com">Request for Quote</a></div>
+             </div>
+        </div><!-- CONTAINER END -->
+    </div><!-- FOOTER END -->  
+    <div class="copyright">&copy; 2015 GHM. All Rights Reserved.</div>
+</body>
+</html>
